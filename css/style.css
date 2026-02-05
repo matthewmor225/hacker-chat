@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: #00ff9c;
+  font-family: "Courier New", monospace;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #050505;
+  border-right: 1px solid #00ff9c;
+  padding: 10px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.channel {
+  padding: 6px;
+  cursor: pointer;
+}
+
+.channel:hover {
+  background: #003b2f;
+}
+
+.channel.active {
+  background: #00ff9c;
+  color: black;
+}
+
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#messages div {
+  margin-bottom: 4px;
+}
+
+#msgInput {
+  border: none;
+  outline: none;
+  background: black;
+  color: #00ff9c;
+  padding: 12px;
+  font-size: 14px;
+}
